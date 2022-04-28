@@ -8,11 +8,6 @@ import logo from '../menu/meme.png';
 
 
 
-
-
-
-
-
 export const Header = () => {
 
   return (
