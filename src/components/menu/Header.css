@@ -1,0 +1,43 @@
+
+
+.Header{  
+    margin: 3vh;
+    height: 10vh;
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Header_logo img{
+    
+    width: 55px;
+    height: 55px;
+}
+
+.Header_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Header_list a{
+    text-decoration: none;
+}
+
+.Header_list li{
+    color: aliceblue;
+    margin: 0 20px;
+    padding: 0px;
+    list-style: none;
+    font-size: 5vh;
+    
+}
+
+
+/* Animação */
+
+.Header_list li:hover{
+    transform: rotate(360deg);
+    transition: 2s;
+}
