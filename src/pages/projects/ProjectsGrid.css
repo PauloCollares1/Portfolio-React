@@ -1,0 +1,41 @@
+.section2{
+    margin-top: 10vh;
+}
+.projetos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card{
+    margin: 10px;
+    padding: 5px;
+    width: 45vh;
+    height: 45vh;
+    min-height: 15%;
+
+    border-radius: 15px;
+    border-style: solid;
+    border-width: 1px;
+
+    font-size: larger;
+    text-align: justify;
+    overflow: hidden;
+	overflow-wrap: break-word;
+}
+.card h3{
+    text-align: center;
+}
+.card button{
+    background-color: aliceblue;
+    margin-left: 20%;
+    margin-bottom: 3px;
+    width: 55%;
+    height: 15%;
+    border-radius: 15px;
+    font-size: 15px;
+}
+.card button:hover{
+    background-color: rgb(186, 179, 247);
+    margin-top: 10px;
+    transition: 2s;
+}
