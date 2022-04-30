@@ -1,5 +1,5 @@
 import  jsonlist  from '../../dados.json';
-import './ProjectsGrid.css'
+import './ProjectsGrid.css';
 
 
 export const ProjectsGrid = () => {
@@ -9,19 +9,25 @@ export const ProjectsGrid = () => {
         <div className='projetos'>
             {jsonlist.map((item) => (
                 <div className='card' key={item.id}>
-                    <h3><b>Título:</b><br /> {item.titulo}</h3>
+
+                    <h3><b>Título:</b>
                     <br />
-                    <span><b>Descrição:</b>
+                    {item.titulo}</h3>
                     <br />
-                    {item.descrição}</span>
+                    
+                      <b>Descrição:</b>
+                      <br />
+                      {item.descrição}
+          
                     <br />
                     <br />
-                    <span><b>Tecnologias utilizadas:</b></span>
-                    <br />
-                    <span>{item.tecnologias}</span>
-                    <br />
-                    <br />
-                    <a href='https://www.google.com'><button>Acessar aplicação</button></a>
+
+                      <span>
+                        <b>Tecnologias utilizadas:</b>
+                      </span>
+                    {item.tecnologias}
+                    
+                    <a href={item.url}><button><b>Acessar aplicação</b></button></a>
                 </div>
             ))}
         </div>

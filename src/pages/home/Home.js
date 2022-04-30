@@ -1,30 +1,59 @@
-import React from 'react'
-//-----------------------//
-import './Home.css'
-import perfil from '../home/foto.jpeg';
-import arrowGif from '../home/downArrowGif.gif';
+import React from 'react';
+//------------------------------------------------------//
 import { ProjectsGrid } from '../projects/ProjectsGrid';
-
-
-
-
+import github_image from '../home/imgs/github-icon.png';
+import arrowDown from '../home/imgs/downArrowGif.gif';
+import react_image from '../home/imgs/react-icon.png';
+import mongo_image from '../home/imgs/mongo-icon.png';
+import html_image from '../home/imgs/html5-icon.png';
+import node_image from '../home/imgs/node-icon.png';
+import css_image from '../home/imgs/css-icon.png';
+import git_image from '../home/imgs/git-icon.png';
+import js_image from '../home/imgs/js-icon.png';
+import perfil from '../home/imgs/foto.jpeg';
+import Typical from 'react-typical'; // Hook externo que faz o efeito de digitação
+import './Home.css';
 
 export const Home = () => {
+
+   const scrollTop = function() {
+      window.scrollTo(0, 0);
+   };
+
   return (
      <section className='section1'>
-        <img src={perfil} alt='Foto do perfil de quem criou'></img>
-        <h1>Quem sou eu?</h1>
-        <p>&rarr; Meu nome é Paulo e esse aqui é meu portfólio !<br />
-           &rarr; Minhas bases são formadas em HTML CSS e o bom e velho Javascript.<br />
-           &rarr; Para me profissionalizar ainda mais estou desenvolvendo as Stacks de Node-js e React-js.<br />
-           &rarr; Esse site por exemplo, ele foi construído em React.<br />
-           &rarr;Atualiemnte procuro uma oportunidade nessa área e se você puder me ajudar, eu agradeço!<br />
-           &rarr;Também gosto de jogar volei de praia e assistir muuuuuitos filmes.<br />
-           &rarr;Aos finais de semana eu gosto de tomar cerveja e conhecer novos lugares.<br />
+        <h1>Portfólio</h1>
+        <img src={perfil} alt='Foto do perfil de quem criou o site'></img>
+        <span>
+           <h3>Quem sou eu? &nbsp;</h3>
+           <Typical loop={Infinity} wrapper="h3" steps={['Desenvolvedor', 3000, 'Amigo', 3000, 'TI', 3000, 'Cafezeiro', 3000, 'Geek', 3000, 'Muito bom com trabalho em equipe', 3000, 'Resolvedor de problemas',3000]}></Typical>
+        </span>
+        
+        <p>&rarr; Oiii, Tudo beleza por aí ? Meu nome é Paulo e eu sou um desenvolvedor!<br />
+           &rarr; Minhas bases são formadas em Javascript.<br />
+           &rarr; Estou atualmente estudando e programando nas Stack's de Node-js e React-js.<br />
+           &rarr; Esse site, por exemplo, foi todo construído em React.<br />
+           &rarr; Aos finais de semana, eu gosto de tomar cervejas diferentes 🍺🍺 e Estudar sobre programação 📚📚.<br />
          </p>
+
+         <h1>Tenho familiaridade com as seguintes Stack's</h1> 
+
+         <div className='stacks_logo'>
+            <img src={html_image} alt="Foto de uma seta apontando para baixo"/>
+            <img src={css_image} alt="Foto de uma seta apontando para baixo"/>
+            <img src={js_image} alt="Foto de uma seta apontando para baixo"/>
+            <img src={react_image} alt="Foto de uma seta apontando para baixo"/>
+            <img src={node_image} alt="Foto de uma seta apontando para baixo"/>
+            <img src={mongo_image} alt="Foto de uma seta apontando para baixo"/>
+            <img src={git_image} alt="Foto de uma seta apontando para baixo"/>
+            <img src={github_image} alt="Foto de uma seta apontando para baixo"/>
+         </div>
+         
          <h1>Veja abaixo alguns dos meus projetos</h1>
-         <img src={arrowGif} alt="Seta indicando para desce mais a página" />
+         <img src={arrowDown}  alt="Foto de uma seta apontando para baixo"/>
          <ProjectsGrid />
+         <h3>Para me contactar, basta falar comigo em uma das redes sociais no topo da tela</h3>
+         <button onClick={scrollTop}><b>Voltar ao topo</b></button>
      </section>
   )
 }

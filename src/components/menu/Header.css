@@ -9,6 +9,9 @@
     align-items: center;
     justify-content: space-between;
 }
+.Header_logo{
+    color: aliceblue;
+}
 
 .Header_logo img{
     

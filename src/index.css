@@ -1,7 +1,8 @@
 body {
-  background-color: aliceblue;
   margin: 0;
   padding: 0;
+  background-color: aliceblue;
+  font-family: 'Rubik', sans-serif; 
 }
 
 
