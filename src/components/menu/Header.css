@@ -21,7 +21,7 @@
 
 .Header_list{
     display: flex;
-    flex-wrap:inherit
+    flex-wrap:wrap;
 }
 
 .Header_list a{
