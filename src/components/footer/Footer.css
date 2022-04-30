@@ -1,0 +1,10 @@
+.footer{
+    display: flex;
+    height: 5vh;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+.footer_text{
+    color: aliceblue;
+}
