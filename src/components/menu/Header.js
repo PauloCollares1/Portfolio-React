@@ -14,7 +14,7 @@ export const Header = () => {
         <StickyBox offsetTop={0}>
             <ParticlesBg type="lines" bg={true} />
             <div className='Header'>
-                <div className='Header_logo'>Grupo:NODEstino-js</div>
+                <div className='Header_logo'>NODEstino-js</div>
                 <nav>
                     <ul className='Header_list'>
                         <a href='https://github.com/PauloCollares1'>
